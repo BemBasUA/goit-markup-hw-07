@@ -3,8 +3,7 @@
     border-bottom: 1px solid #ececec;
 }
 
-.header-nav {
-    @extend %container;
+.page-header__container {
     display: flex;
     align-items: center;
 }
@@ -35,7 +34,7 @@
 
 .site-nav__link--current {
     position: relative;
-    color: var(--accent-color);
+    color: $accent-color;
     &:after{
         position: absolute;
         bottom: -1px;

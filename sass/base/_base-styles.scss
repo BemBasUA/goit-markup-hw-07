@@ -19,3 +19,19 @@ body {
     background-color: $primary-white-color;
     color: $primary-text-color;
 }
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.section {
+    padding: 94px 0;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}

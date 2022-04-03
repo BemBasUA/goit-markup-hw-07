@@ -159,24 +159,23 @@ body {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-.hidden {
-  display: none;
-}
+
 .button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: 0;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   cursor: pointer;
+  
 }
 .button.primary {
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 0;
   transition: background-color 250ms var(--primary-transition);
 }
 .button.primary:hover {
@@ -184,6 +183,18 @@ body {
 }
 
 /* features section */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+  }
 .features-list {
   display: flex;
 }
@@ -277,11 +288,12 @@ body {
   text-align: center;
   color: var(--secondary-text-color);
 }
+
+/* Socials */
 .our-team-list .social-list {
   display: flex;
   justify-content: center;
 }
-/* Socials */
 .social-list > .list-item:not(:last-child) {
   margin-right: 10px;
 }
